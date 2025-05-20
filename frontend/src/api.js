@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:5000/api'
+  baseURL: 'https://appointment-service-1.onrender.com/api'
 });
 
 export const registerUser = (formData) => API.post('/auth/register', formData);
