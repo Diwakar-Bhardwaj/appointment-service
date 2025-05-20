@@ -17,7 +17,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:5000/api/procted/update', {
+      const response = await fetch('https://appointment-service-1.onrender.com/api/procted/update', {
         method: 'POST',   // sending data to server backend 
         headers: {
           'Content-Type': 'application/json'
