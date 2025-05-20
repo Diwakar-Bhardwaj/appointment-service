@@ -34,7 +34,10 @@ const logRequest=(req,res,next)=>{
 app.use(logRequest); // isse sare route pr time and url print hoga 
 app.use(express.json());
 
-app.use(cors());
+app.use(cors({
+  origin: 'https://appointment-service-2.onrender.com',
+  credentials: true, // if you're sending cookies or auth headers
+}));
 app.use("/api/auth", require("./routes/auth.js"));
 // /api/auth  This is the base path for the routes you are importing.
   app.use("/api/procted",require("./routes/proctedRoutes.js"));
