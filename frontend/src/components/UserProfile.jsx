@@ -16,7 +16,7 @@ const UserProfile = () => {
           return;
         }
 
-        const res = await axios.get('http://localhost:5000/api/procted/profile', {
+        const res = await axios.get('https://appointment-service-1.onrender.com/api/procted/profile', {
           headers: {
             Authorization: `Bearer ${token}`
           }
