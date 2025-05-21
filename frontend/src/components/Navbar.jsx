@@ -165,7 +165,7 @@ const [showUploadModal, setShowUploadModal] = useState(false);
               <NavLink to="/pages/update" onClick={() => setIsOpen(false)} className="block text-black">
                 Update Password
               </NavLink>
-              <NavLink to="/pages/appointments" onClick={() => setIsOpen(false)} className="block text-black">
+              <NavLink to="/appointments/my" onClick={() => setIsOpen(false)} className="block text-black">
                 Your Appointment
               </NavLink>
               <p
