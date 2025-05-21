@@ -152,6 +152,16 @@ const [showUploadModal, setShowUploadModal] = useState(false);
               <NavLink to="/profile" onClick={() => setIsOpen(false)} className="block text-black">
                 Profile
               </NavLink>
+              <button
+                    onClick={() => {
+                      setShowDropdown(false);
+                      setShowUploadModal(true); // Open the modal
+                    }}
+                    className="w-full text-left px-4 py-2 hover:bg-gray-100 text-black"
+                     type="button" 
+                  >
+                    Upload Image
+                  </button>
               <NavLink to="/pages/update" onClick={() => setIsOpen(false)} className="block text-black">
                 Update Password
               </NavLink>
